@@ -11,7 +11,7 @@
   },
   "autoload": {
     "psr-4": {
-      "AsciiSoup\\PhpSpec\\TeamCityFormatter": "src/AsciiSoup/PhpSpec/TeamCityFormatter"
+      "AsciiSoup\\PhpSpec\\TeamCityFormatter\\": "src/AsciiSoup/PhpSpec/TeamCityFormatter"
     }
   },
   "authors": [
