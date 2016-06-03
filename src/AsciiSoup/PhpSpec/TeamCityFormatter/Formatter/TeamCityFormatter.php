@@ -1,10 +1,11 @@
 <?php
 
-namespace PhpSpec\Formatter;
+namespace \AsciiSoup\PhpSpec\TeamCityFormatter\Formatter;
 
 use PhpSpec\Event\SpecificationEvent;
 use PhpSpec\Event\SuiteEvent;
 use PhpSpec\Event\ExampleEvent;
+use PhpSpec\Formatter\ConsoleFormatter;
 
 /**
  * TeamCityFormatter
