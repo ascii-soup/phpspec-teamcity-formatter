@@ -10,8 +10,8 @@
     "phpspec/phpspec": "~2.0"
   },
   "autoload": {
-    "psr-0": {
-      "AsciiSoup\\PhpSpec\\TeamCityFormatter": "src/"
+    "psr-4": {
+      "AsciiSoup\\PhpSpec\\TeamCityFormatter": "src/AsciiSoup/PhpSpec/TeamCityFormatter"
     }
   },
   "authors": [
