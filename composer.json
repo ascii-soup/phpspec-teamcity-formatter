@@ -1,0 +1,23 @@
+{
+  "name": "ascii-soup/phpspec-teamcity-formatter",
+  "description": "PHPSpec TeamCity Formatter Extension",
+  "type": "extension",
+  "keywords": ["phpspec", "teamcity", "phpstorm", "intellij", "jetbrains"],
+  "homepage": "https://github.com/ascii-soup/phpspec-teamcity-formatter",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.3.3",
+    "phpspec/phpspec": "~2.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "AsciiSoup\\PhpSpec\\TeamCityFormatter": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Nils Luxton",
+      "email": "ascii.soup@gmail.com"
+    }
+  ]
+}

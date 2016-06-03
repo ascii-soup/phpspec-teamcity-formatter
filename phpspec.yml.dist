@@ -1,0 +1,2 @@
+extensions:
+    - AsciiSoup\PhpSpec\TeamCityFormatter\Extension
