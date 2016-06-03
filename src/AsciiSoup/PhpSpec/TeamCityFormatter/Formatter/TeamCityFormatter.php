@@ -1,6 +1,6 @@
 <?php
 
-namespace \AsciiSoup\PhpSpec\TeamCityFormatter\Formatter;
+namespace AsciiSoup\PhpSpec\TeamCityFormatter\Formatter;
 
 use PhpSpec\Event\SpecificationEvent;
 use PhpSpec\Event\SuiteEvent;
