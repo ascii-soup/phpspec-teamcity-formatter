@@ -131,9 +131,4 @@ class TeamCityFormatter extends ConsoleFormatter
 
         return $string;
     }
-
-    public function notAnActualMethod()
-    {
-        return 1;
-    }
 }
