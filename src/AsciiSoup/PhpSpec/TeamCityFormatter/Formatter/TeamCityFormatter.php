@@ -49,12 +49,17 @@ class TeamCityFormatter extends ConsoleFormatter
 
     public function beforeExample(ExampleEvent $event)
     {
+        $specFilename = $event->getSpecification()->getClassReflection()->getFileName();
+        $specClass = $event->getSpecification()->getClassReflection()->getName();
+        $exampleName = $event->getExample()->getFunctionReflection()->getName();
+
         $this->getIO()->writeln(
             $this->teamCityMessage(
                 'testStarted',
                 array(
                     'name' => $event->getTitle(),
-                    'captureStandardOutput' => 'false'
+                    'captureStandardOutput' => 'false',
+                    'locationHint' => "file://{$specFilename}::\\{$specClass}::{$exampleName}",
                 )
             )
         );
@@ -108,9 +113,13 @@ class TeamCityFormatter extends ConsoleFormatter
 
     public function beforeSpecification(SpecificationEvent $event)
     {
+        $specFilename = $event->getSpecification()->getClassReflection()->getFileName();
+        $specClass = $event->getSpecification()->getClassReflection()->getName();
+
         $this->getIO()->writeln($this->teamCityMessage('testSuiteStarted', array(
             'name' => $event->getTitle(),
-            'locationHint' => "php_qn://{$event->getSpecification()->getClassReflection()->getFileName()}::\\{$event->getTitle()}"
+//            'locationHint' => "php_qn://{$event->getSpecification()->getClassReflection()->getFileName()}::\\{$event->getTitle()}"
+            'locationHint' => "file://{$specFilename}::\\{$specClass}",
         )));
     }
 
